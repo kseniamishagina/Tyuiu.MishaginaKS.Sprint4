@@ -2,29 +2,46 @@
 
 namespace Tyuiu.MishaginaKS.Sprint4.Task7.V20.Lib;
 
-public class DataService : ISprint4Task4V20
+public class DataService : ISprint4Task7V20
 
 {
-    public int[,] Calculate(int[,] matrix)
+    public int Calculate(int n, int m, string value)
 
     {
-        int rows = matrix.GetUpperBound(0) + 1;
-        int columns = matrix.Length / rows;
-
-        for (int i = 0; i < rows; i++)
-
         {
-            for (int j = 0; j < columns; j++)
+            int[,] matrix = new int[n, m];
+            int index = 0;
+
+            for (int i = 0; i < n; i++)
 
             {
-                if (matrix[i, j] % 2 == 0)
+                for (int j = 0; j < m; j++)
                 {
-                    matrix[i, j] *= 2;
+                    matrix[i, j] = int.Parse(value[index].ToString());
+                    index++;
                 }
             }
-        }
 
-        return matrix;
+            int product = 1;
+            bool hasEven = false;
+
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < m; j++)
+                {
+                    if (matrix[i, j] % 2 == 0 && matrix[i, j] != 0)
+                    {
+                        product *= matrix[i, j];
+                        hasEven = true;
+                    }
+                }
+            }
+
+            return hasEven ? product : 0;
+        }
     }
 }
+
+
+
 

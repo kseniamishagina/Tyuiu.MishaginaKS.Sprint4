@@ -3,7 +3,6 @@ using Tyuiu.MishaginaKS.Sprint4.Task7.V20.Lib;
 
 namespace Tyuiu.MishaginaKS.Sprint4.Task7.V20;
 
-
 class Program
 
 {
@@ -30,45 +29,27 @@ class Program
         int rows = 5;
         int columns = 3;
         string str = "357951248632587";
-        int[,] matrix = new int[rows, columns];
 
         int index = 0;
-        Console.WriteLine("\nИсходная матрица:");
+        Console.WriteLine("\nМассив:");
         for (int i = 0; i < rows; i++)
-
         {
             for (int j = 0; j < columns; j++)
-
             {
-                matrix[i, j] = int.Parse(str[index].ToString());
-                Console.Write($"{matrix[i, j]} \t");
+                Console.Write($"{str[index]} \t");
                 index++;
             }
             Console.WriteLine();
-        }
-
-        int product = 1;
-        for (int i = 0; i < rows; i++)
-
-        {
-            for (int j = 0; j < columns; j++)
-            {
-                if (matrix[i, j] % 2 == 0 && matrix[i, j] != 0)
-                {
-                    product *= matrix[i, j];
-                }
-            }
         }
 
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
 
-        int[,] resultMatrix = ds.Calculate(matrix);
+        int result = ds.Calculate(rows, columns, str);
 
-        Console.WriteLine("Произведение четных элементов = " + product);
+        Console.WriteLine("Произведение четных элементов = " + result);
 
         Console.ReadKey();
     }
 }
-
