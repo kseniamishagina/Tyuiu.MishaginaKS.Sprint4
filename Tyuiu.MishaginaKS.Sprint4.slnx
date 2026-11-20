@@ -29,4 +29,10 @@
     <Project Path="Tyuiu.MishaginaKS.Sprint4.Task5.V12.Test/Tyuiu.MishaginaKS.Sprint4.Task5.V12.Test.csproj" Id="582a773d-ec58-443f-a0e2-15f5a39e57a5" />
     <Project Path="Tyuiu.MishaginaKS.Sprint4.Task5.V12/Tyuiu.MishaginaKS.Sprint4.Task5.V12.csproj" Id="3ab7cb40-7db1-47c1-84e8-fb56b5a8b5e2" />
   </Folder>
+  <Folder Name="/Task 6/">
+    <Project Path="Tyuiu.MishaginaKS.Sprint4.Task6.V15.Lib/Tyuiu.MishaginaKS.Sprint4.Task6.V15.Lib.csproj" Id="a692daba-6f70-4d89-9744-7f16ba34bcdb" />
+    <Project Path="Tyuiu.MishaginaKS.Sprint4.Task6.V15.Test/Tyuiu.MishaginaKS.Sprint4.Task6.V15.Test.csproj" Id="58ac9f40-775c-4df3-aa33-3d0d7de75e53" />
+    <Project Path="Tyuiu.MishaginaKS.Sprint4.Task6.V15/Tyuiu.MishaginaKS.Sprint4.Task6.V15.csproj" Id="4aaa2c83-1184-4738-b60a-d234812e18f8" />
+  </Folder>
+  <Folder Name="/Task 7/" />
 </Solution>
